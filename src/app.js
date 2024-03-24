@@ -1,7 +1,8 @@
 //traemos las variables de entorno creadas en config/env.js
-// import { vars } from './config/env.js'
-const { vars } = require('./config/env')
-const { startServer } = require('./server/server')
+// const { vars } = require('./config/env')
+// const { startServer } = require('./server/server')
+import { vars } from './config/env.js'
+import { startServer } from './server/server.js'
 
 const main = ()=>{
     startServer({

@@ -1,8 +1,10 @@
 //aqui vamos a configurar el servidor
-const express = require("express");
-const path = require("path");
+//const express = require("express");
+//const path = require("path");
+import path from 'path'
+import express from 'express'
 
-const startServer = (options) => {
+export const startServer = (options) => {
   //desestructuramos el objeto que viene desde app y configuramos el path por defecto
   const { port, public_path = "public" } = options;
   // console.log(port)
@@ -28,6 +30,6 @@ const startServer = (options) => {
 
 
 //exportamos la funcion creada
-module.exports = {
-  startServer,
-};
+// module.exports = {
+//   startServer,
+// };
